@@ -1,0 +1,881 @@
+.promistion-area {
+    padding: 5px;
+    background-color: #950926;
+}
+
+/*  ================================
+        global area start
+    ================================ */
+
+body {
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #666;
+}
+
+a,
+a:hover,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-div {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.product-dec table {
+    width: 100% !important;
+}
+
+.pagebuilder-mobile-only {
+    display: none;
+}
+
+/*  ================================
+        global area end
+    ================================ */
+
+/*  ================================
+        header area start
+    ================================ */
+
+.header-top {
+    overflow: hidden;
+    background-color: #323A45;
+}
+
+.wel-come {
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+.wel-come h4 {
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.menu-top {
+    text-align: right;
+}
+
+.menu-top ul {
+    display: inline-block;
+}
+
+.menu-top li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.separate {
+    margin: 0 10px;
+    color: #fff;
+}
+
+.menu-top li a {
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+.menu-top li a:hover {
+    color: #fff;
+}
+
+.logo-area {
+    padding: 10px 0;
+}
+
+/*======================== Menu Design ==================*/
+.primary-menu {
+    background-color: #950926;
+}
+
+#menu-switcher,
+.navbar-header > label,
+.switch {
+    display: none;
+}
+
+.menu-container label::before {
+    border-bottom: 2px solid #fff;
+    box-shadow: 0 5px 0 0 #fff, 0 0 0 0 inset, 0 -5px 0 0 #fff;
+    content: "";
+    height: 0;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+}
+
+.switch {
+    width: 100%;
+    float: left;
+    height: auto;
+    min-height: 45px;
+    position: relative;
+}
+
+.menu-container label {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    cursor: pointer;
+    display: none;
+    height: 35px;
+    padding: 0;
+    position: absolute !important;
+    left: 0;
+    top: 5px;
+    width: 40px;
+    z-index: 9999;
+    border: 1px solid #fff;
+    margin: 0;
+}
+
+#navbar ul {
+    display: inline-block;
+}
+
+#navbar ul li {
+    display: inline-block;
+    list-style: outside none none;
+}
+
+#navbar ul li a {
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: 0.5s;
+    position: relative;
+    padding: 10px 13px;
+    background-image: url(../images/line.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+}
+
+.mfm {
+    display: none !important;
+}
+
+#navbar ul li:last-child a {
+    background-image: none;
+}
+
+#navbar ul li a:hover {
+    background-color: #1D71AB;
+    color: #fff;
+}
+
+/* menu part end */
+.menu-container {
+    float: left;
+}
+
+.btnbox {
+    float: right;
+}
+
+.btnbox a {
+    float: left;
+    margin: 6px 0 5px 5px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 3px;
+}
+
+.btnbox a.visitbtn {
+    background-color: #095330;
+}
+
+.btnbox a.favouritebtn {
+    background-color: #1D71AB;
+}
+
+/*  ================================
+        header area end
+    ================================ */
+
+/*  ================================
+        slider area start
+    ================================ */
+@keyframes slidy {
+    0% {
+        left: 0;
+    }
+
+    17% {
+        left: 0;
+    }
+
+    20% {
+        left: -100%;
+    }
+
+    37% {
+        left: -100%;
+    }
+
+    40% {
+        left: -200%;
+    }
+
+    57% {
+        left: -200%;
+    }
+
+    60% {
+        left: -300%;
+    }
+
+    77% {
+        left: -300%;
+    }
+
+    80% {
+        left: -400%;
+    }
+
+    97% {
+        left: -400%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.all-slider {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 10px 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+figure {
+    margin: 0;
+}
+
+figure.slider {
+    animation: 30s slidy infinite;
+    font-size: 0;
+    position: relative;
+    width: 600%;
+}
+
+figure.slider figure {
+    display: inline-block;
+    height: auto;
+    position: inherit;
+    width: 16.66666666666667%;
+}
+
+figure.slider img {
+    width: 100%;
+    height: auto;
+}
+
+figure.slider figure figcaption {
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.6rem;
+    position: absolute;
+    width: 100%;
+}
+
+/*  ================================
+        slider area end
+    ================================ */
+
+.service-box {
+    overflow: hidden;
+}
+
+.service-box ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.service-box ul li {
+    float: left;
+    width: 33.33%;
+    list-style: none;
+    position: relative;
+    padding: 10px 0 0;
+}
+
+
+.service-left {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+
+.service-right {
+    width: 80%;
+    font-weight: 600;
+    display: inline-block;
+
+    transition: 0.5s;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.service-right h3 {
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.service-right p {
+    color: #666;
+    margin: 0;
+    font-size: 13px;
+}
+
+/*  ================================
+        product title area start
+    ================================ */
+
+.main-title {
+    padding: 8px 13px;
+    background-color: #950926;
+    margin-bottom: 10px;
+    border-bottom: 4px solid #dbb542;
+}
+
+.main-title h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.pro-title h3 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background: url(../images/title-bg.jpg) no-repeat 0 0;
+    padding: 9px 15px 10px;
+}
+
+/*  ================================
+        product title area end
+    ================================ */
+
+/*  ================================
+        product area start
+    ================================ */
+
+.product-wraper {
+    border: 1px solid #D1D1D1;
+    overflow: hidden;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.dec-title {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.product-dec h3 {
+
+    font-size: 22px;
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
+.product-dec h4 {
+    font-weight: bold;
+
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 20px 0 10px;
+}
+
+.product-dec p {
+    margin-bottom: 10px !important;
+}
+
+.product-dec p strong {
+    font-size: 16px;
+}
+
+.product-dec span {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+p.colortx {
+    color: #950926;
+}
+
+.product-dec ul {
+    margin-bottom: 30px;
+}
+
+.product-dec ul,
+.tab-list ul {
+    margin: 0 0 10px;
+}
+
+.product-dec ul li,
+.box-content ul li {
+    list-style: none;
+    padding: 5px 20px;
+    position: relative;
+}
+
+.box-content ul li {
+    margin-top: 10px;
+    font-weight: 700;
+
+}
+
+.product-dec ul li::before,
+.box-content ul li::before {
+    position: absolute;
+    content: "\f046";
+    font-family: fontawesome;
+    left: 0;
+    color: #950926;
+}
+
+.tl {
+    text-align: left !important;
+}
+
+.scp {
+    padding: 15px
+}
+
+.scpe {
+    padding: 0 10px 10px;
+}
+
+.product-dec ul.point {
+    display: inline-block;
+    float: left;
+    width: 50%;
+}
+
+/*  ================================
+        product area end
+    ================================ */
+
+/*  ================================
+        tab area start
+    ================================ */
+.accordion {}
+
+.accordion input {
+    display: none;
+}
+
+.box {
+    position: relative;
+    background: white;
+    height: 64px;
+    transition: all .15s ease-in-out;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+}
+
+.box-title {
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+    padding: 0 20px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.box-title i.fa {
+    margin-right: 10px;
+}
+
+.box-content {
+    padding: 20px;
+    display: none;
+    background-color: #f5f5f5;
+    width: 100%;
+}
+
+.box-close {
+    position: absolute;
+    height: 64px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.accordion input:checked + .box {
+    height: auto;
+    margin: 16px 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 12px rgba(0, 0, 0, .32);
+}
+
+.accordion input:checked + .box .box-title {
+    border-bottom: 1px solid rgba(0, 0, 0, .18);
+}
+
+.accordion input:checked + .box .box-content,
+.accordion input:checked + .box .box-close {
+    display: inline-block;
+}
+
+.arrows section .box-title {
+    padding-left: 44px;
+    font-size: 22px;
+    color: #950926;
+}
+
+.arrows section .box-title:before {
+    position: absolute;
+    display: block;
+    content: '\203a';
+    font-size: 18pt;
+    left: 20px;
+    top: -2px;
+    transition: transform .15s ease-in-out;
+    color: rgba(0, 0, 0, .54);
+}
+
+.accordion input:checked + section.box .box-title:before {
+    transform: rotate(90deg);
+}
+
+.box-content p {
+    line-height: 22px;
+    margin: 15px 0;
+}
+
+/*  ================================
+        tab area end
+    ================================ */
+
+
+/*  ================================
+        footer area start
+    ================================ */
+
+.sub-btn {
+    border: 1px solid #095330;
+    background: #095330;
+    color: #fff;
+    text-transform: uppercase !important;
+    padding: 10px 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.sub-btn:focus,
+.sub-btn:hover {
+    color: #fff;
+}
+
+.service-img-area {
+    margin: 20px 0;
+}
+
+.service-img-area img {
+    border: 1px solid #eee;
+    padding: 5px;
+}
+
+/*  ================================
+        footer area end
+    ================================ */
+.csslider {
+    position: relative;
+}
+
+.csslider > input {
+    display: none;
+}
+
+.csslider > input:nth-of-type(10):checked ~ ul li:first-of-type {
+    margin-left: -900%;
+}
+
+.csslider > input:nth-of-type(9):checked ~ ul li:first-of-type {
+    margin-left: -800%;
+}
+
+.csslider > input:nth-of-type(8):checked ~ ul li:first-of-type {
+    margin-left: -700%;
+}
+
+.csslider > input:nth-of-type(7):checked ~ ul li:first-of-type {
+    margin-left: -600%;
+}
+
+.csslider > input:nth-of-type(6):checked ~ ul li:first-of-type {
+    margin-left: -500%;
+}
+
+.csslider > input:nth-of-type(5):checked ~ ul li:first-of-type {
+    margin-left: -400%;
+}
+
+.csslider > input:nth-of-type(4):checked ~ ul li:first-of-type {
+    margin-left: -300%;
+}
+
+.csslider > input:nth-of-type(3):checked ~ ul li:first-of-type {
+    margin-left: -200%;
+}
+
+.csslider > input:nth-of-type(2):checked ~ ul li:first-of-type {
+    margin-left: -100%;
+}
+
+.csslider > input:nth-of-type(1):checked ~ ul li:first-of-type {
+    margin-left: 0;
+}
+
+.csslider > ul {
+    box-sizing: border-box;
+    font-size: 0;
+    line-height: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.csslider > ul > li {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: initial;
+    height: 400px;
+    line-height: normal;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1) 0s;
+    vertical-align: middle;
+    white-space: normal;
+    width: 100%;
+    text-align: center;
+}
+
+.csslider > ul > li.scrollable {
+    overflow-y: scroll;
+}
+
+.csslider > .navigation {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.csslider > .navigation label {
+    background: transparent none repeat scroll 0 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    vertical-align: middle;
+}
+
+.csslider > .navigation label img {
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 5px;
+}
+
+.csslider > .navigation label:hover::after {
+    opacity: 1;
+}
+
+.csslider > .navigation label::after {
+    background: transparent none repeat scroll 0 0;
+    border-radius: 50%;
+    content: "";
+    left: 50%;
+    margin-left: -6px;
+    margin-top: -6px;
+    opacity: 0;
+    padding: 6px;
+    position: absolute;
+    top: 50%;
+}
+
+.csslider > .arrows {
+    -moz-user-select: none;
+}
+
+.csslider.inside .navigation {
+    bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.csslider.inside .navigation label {
+    border: 1px solid #7e7e7e;
+}
+
+.csslider > input:nth-of-type(1):checked ~ .navigation label:nth-of-type(1)::after,
+.csslider > input:nth-of-type(2):checked ~ .navigation label:nth-of-type(2)::after,
+.csslider > input:nth-of-type(3):checked ~ .navigation label:nth-of-type(3)::after,
+.csslider > input:nth-of-type(4):checked ~ .navigation label:nth-of-type(4)::after,
+.csslider > input:nth-of-type(5):checked ~ .navigation label:nth-of-type(5)::after,
+.csslider > input:nth-of-type(6):checked ~ .navigation label:nth-of-type(6)::after,
+.csslider > input:nth-of-type(7):checked ~ .navigation label:nth-of-type(7)::after,
+.csslider > input:nth-of-type(8):checked ~ .navigation label:nth-of-type(8)::after,
+.csslider > input:nth-of-type(9):checked ~ .navigation label:nth-of-type(9)::after,
+.csslider > input:nth-of-type(10):checked ~ .navigation label:nth-of-type(10)::after,
+.csslider > input:nth-of-type(11):checked ~ .navigation label:nth-of-type(11)::after {
+    opacity: 1;
+}
+
+.csslider > .arrows {
+    box-sizing: content-box;
+    height: 26px;
+    left: -31px;
+    padding: 0 31px;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    z-index: 0;
+}
+
+.csslider > .arrows label {
+    box-shadow: 2px -2px 0 1px #3a3a3a inset;
+    cursor: pointer;
+    display: none;
+    padding: 13px;
+    position: absolute;
+    top: -50%;
+    transition: box-shadow 0.15s ease 0s, margin 0.15s ease 0s;
+    z-index: 9999;
+}
+
+.csslider > .arrows label:hover {
+    box-shadow: 3px -3px 0 2px #009EE1 inset;
+    margin: 0;
+}
+
+.csslider.infinity > input:first-of-type:checked ~ .arrows label.goto-last,
+.csslider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(0),
+.csslider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(1),
+.csslider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(2),
+.csslider > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(3),
+.csslider > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(4),
+.csslider > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(5),
+.csslider > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(6),
+.csslider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(7),
+.csslider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(8),
+.csslider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(9),
+.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(10) {
+    display: block;
+    left: -27px;
+    right: auto;
+    transform: rotate(45deg);
+}
+
+.csslider.infinity > input:last-of-type:checked ~ .arrows label.goto-first,
+.csslider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(2),
+.csslider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(3),
+.csslider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(4),
+.csslider > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(5),
+.csslider > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(6),
+.csslider > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(7),
+.csslider > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(8),
+.csslider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(9),
+.csslider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(10),
+.csslider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(11),
+.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(12) {
+    display: block;
+    left: auto;
+    right: -27px;
+    transform: rotate(225deg);
+}
+
+.rt-container {
+    margin: 0 auto;
+    width: 76%;
+}
+
+.csslider ul li img {
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.navigation > label {
+    border: 1px solid #D1D1D1;
+    border-radius: 5px !important;
+    margin-bottom: 5px;
+}
